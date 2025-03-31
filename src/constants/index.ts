@@ -32,31 +32,40 @@ export const QUICK_ACTIONS = [
     icon: Code2,
     title: "New Call",
     description: "Start an instant call",
-    color: "primary",
+    colorClass: "primary",
+    bgClass: "bg-primary/10",
+    textClass: "text-primary",
     gradient: "from-primary/10 via-primary/5 to-transparent",
   },
   {
     icon: Users,
     title: "Join Interview",
     description: "Enter via invitation link",
-    color: "purple-500",
+    colorClass: "purple-500",
+    bgClass: "bg-purple-500/10",
+    textClass: "text-purple-500",
     gradient: "from-purple-500/10 via-purple-500/5 to-transparent",
   },
   {
     icon: Calendar,
     title: "Schedule",
     description: "Plan upcoming interviews",
-    color: "blue-500",
+    colorClass: "blue-500",
+    bgClass: "bg-blue-500/10",
+    textClass: "text-blue-500",
     gradient: "from-blue-500/10 via-blue-500/5 to-transparent",
   },
   {
     icon: Clock,
     title: "Recordings",
     description: "Access past interviews",
-    color: "orange-500",
+    colorClass: "orange-500",
+    bgClass: "bg-orange-500/10",
+    textClass: "text-orange-500",
     gradient: "from-orange-500/10 via-orange-500/5 to-transparent",
   },
 ];
+
 
 export const CODING_QUESTIONS: CodeQuestion[] = [
   {

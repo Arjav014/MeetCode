@@ -21,9 +21,9 @@ function MeetingModal({
   const { createInstantMeeting, joinMeeting } = useMeetingActions();
 
   const handleStart = () => {
-    if(isJoinMeeting){
+    if (isJoinMeeting) {
       const meetingId = meetingUrl.split("/").pop();
-      if(meetingId) joinMeeting(meetingId);
+      if (meetingId) joinMeeting(meetingId);
     } else {
       createInstantMeeting();
     }
@@ -47,10 +47,15 @@ function MeetingModal({
             />
           )}
           <div className="flex justify-end gap-3">
-            <Button variant="outline" onClick={onClose}>
+            <Button
+              className="cursor-pointer"
+              variant="outline"
+              onClick={onClose}
+            >
               Cancel
             </Button>
             <Button
+              className="cursor-pointer"
               onClick={handleStart}
               disabled={isJoinMeeting && !meetingUrl.trim()}
             >

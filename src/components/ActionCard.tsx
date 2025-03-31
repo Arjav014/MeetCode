@@ -20,9 +20,9 @@ const ActionCard = ({
       <div className="relative p-6 size-full">
         <div className="space-y-3">
           <div
-            className={`w-12 h-12 rounded-full flex items-center justify-center bg-${action.color}/10 group-hover:scale-110 transition-transform`}
+            className={`w-12 h-12 rounded-full flex items-center justify-center ${action.bgClass} group-hover:scale-110 transition-transform`}
           >
-            <action.icon className={`h-6 w-6 text-${action.color}`} />
+            <action.icon className={`h-6 w-6 ${action.textClass}`} />
           </div>
           <div className="space-y-1">
             <h3 className="font-semibold text-xl group-hover:text-primary transition-colors">
