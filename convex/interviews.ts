@@ -48,7 +48,7 @@ export const createIterview = mutation({
     status: v.string(),
     streamCallId: v.string(),
     candidateId: v.string(),
-    interviewersIds: v.array(v.string()),
+    interviewerIds: v.array(v.string()),
   },
   handler: async (ctx, args) => {
     const identity = ctx.auth.getUserIdentity();

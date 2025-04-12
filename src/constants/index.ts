@@ -25,6 +25,8 @@ export const TIME_SLOTS = [
   "16:00",
   "16:30",
   "17:00",
+  "17:30",
+  "18:00"
 ];
 
 export const QUICK_ACTIONS = [

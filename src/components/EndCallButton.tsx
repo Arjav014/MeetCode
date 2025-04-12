@@ -43,7 +43,7 @@ const EndCallButton = () => {
 
   return (
     <Button variant={"destructive"} onClick={endCall}>
-      EndCallButton
+      End Meeting
     </Button>
   );
 };
